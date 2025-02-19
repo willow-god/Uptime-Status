@@ -100,7 +100,7 @@ const overviewItems = computed(() => [
     desc: '全部网站',
     icon: 'bi:check-circle',
     iconColor: 'text-emerald-500',
-    containerClass: 'after:border-emerald-500/50 dark:after:border-emerald-400/50'
+    containerClass: 'after:border-emerald-500/50 dark:after:border-emerald-400/50 backdrop-blur-sm'
   },
   {
     label: '正常网站',
@@ -108,7 +108,7 @@ const overviewItems = computed(() => [
     desc: '访问正常',
     icon: 'bi:check-circle-fill',
     iconColor: 'text-green-500',
-    containerClass: 'after:border-green-500/50 dark:after:border-green-400/50'
+    containerClass: 'after:border-green-500/50 dark:after:border-green-400/50 backdrop-blur-sm'
   },
   {
     label: '异常网站',
@@ -116,7 +116,7 @@ const overviewItems = computed(() => [
     desc: '访问异常',
     icon: 'bi:x-circle-fill',
     iconColor: 'text-red-500',
-    containerClass: 'after:border-red-500/50 dark:after:border-red-400/50'
+    containerClass: 'after:border-red-500/50 dark:after:border-red-400/50 backdrop-blur-sm'
   },
   {
     label: '平均响应',
@@ -125,7 +125,7 @@ const overviewItems = computed(() => [
     desc: '网络延迟',
     icon: 'bi:clock',
     iconColor: 'text-blue-500',
-    containerClass: 'after:border-blue-500/50 dark:after:border-blue-400/50'
+    containerClass: 'after:border-blue-500/50 dark:after:border-blue-400/50 backdrop-blur-sm'
   }
 ])
 

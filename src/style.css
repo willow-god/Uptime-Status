@@ -38,7 +38,7 @@
 }
 
 * {
-  font-family: HarmonyOS_Regular,MiSans,HarmonyOS Sans SC,sans-serif; /* 字体 */
+  font-family: "KingHwa_OldSong",MiSans,HarmonyOS Sans SC,sans-serif; /* 字体 */
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
@@ -47,7 +47,7 @@
 @layer components {
   /* 基础卡片样式 */
   .card-base {
-    @apply p-4 rounded-xl bg-white dark:bg-gray-800/50 
+    @apply p-4 rounded-xl bg-white bg-opacity-60 dark:bg-gray-800/50 
       border border-gray-200/60 dark:border-gray-700/60 
       transition-all duration-300;
   }
@@ -81,4 +81,42 @@
 #app {
   width: 100%;
   margin: 0 auto;
+}
+
+#background {
+  position: fixed;
+  bottom: 50%;
+  right: 35%;
+  transform: translate(50%, 50%);
+  width: 3000px;
+  z-index: 0;
+  /* 不允许选中 */
+  user-select: none;
+  pointer-events: none;
+}
+
+#bg-poem {
+  white-space: pre-line;
+  text-align: center;
+  color: #bdc0c598; /* 等同于 text-gray-400 */
+  font-size: 3.75rem; /* 等同于 text-6xl */
+}
+
+/* 响应式字体大小 */
+@media (min-width: 768px) {
+  #bg-poem {
+    font-size: 4.5rem; /* 等同于 md:text-7xl */
+  }
+}
+
+@media (min-width: 1024px) {
+  #bg-poem {
+    font-size: 5rem; /* 等同于 lg:text-8xl */
+  }
+}
+
+@media (min-width: 1280px) {
+  #bg-poem {
+    font-size: 6rem; /* 等同于 xl:text-9xl */
+  }
 }

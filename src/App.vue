@@ -2,7 +2,7 @@
   <div class="min-h-screen flex flex-col bg-gradient-to-br from-gray-50 via-gray-50 to-gray-100 
     dark:from-gray-900 dark:via-gray-900 dark:to-gray-800 transition-colors duration-300">
     <div class="flex-1 p-3 sm:p-8">
-      <main class="max-w-7xl mx-auto space-y-8">
+      <main class="max-w-7xl mx-auto pl-0 pr-0 sm:pl-4 sm:pr-4 md:pl-9 md:pr-9 lg:pl-14 lg:pr-14 space-y-8">
         <Header 
           ref="headerRef"
           :title="title"
